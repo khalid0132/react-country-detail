@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './CountryDetail.css'
 
 const CountryDetail = () => {
     let {countryName} = useParams();
@@ -17,7 +18,7 @@ const CountryDetail = () => {
     const {population, capital, flag} = exactCountry;
     
     return (
-        <div>
+        <div className ="country-detail">
             <h1>Country: {countryName}</h1>
             <p><img style={{width:'100px'}} src={flag} alt=""/></p>
             <p>Population: {population}</p>

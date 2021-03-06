@@ -1,0 +1,8 @@
+.country-detail{
+    border: 2px solid red;
+    box-shadow: 5px 5px 10px yellow;
+    width:300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
