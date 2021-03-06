@@ -10,18 +10,19 @@ const CountryDetail = () => {
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            setExactCountry(data)
+            setExactCountry(data[0])
             console.log(data)
         })
     },[])
-    const {population, capital, currency} = exactCountry;
+    const {population, capital, flag} = exactCountry;
     
     return (
         <div>
             <h1>Country: {countryName}</h1>
+            <p><img style={{width:'100px'}} src={flag} alt=""/></p>
             <p>Population: {population}</p>
             <p>Capital: {capital}</p>
-            <p>Currency: {currency}</p>
+            {/* <p>Currency: {currencies}</p> */}
         </div>
     );
 };
