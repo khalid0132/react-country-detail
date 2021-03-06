@@ -9,17 +9,23 @@ import {
 import NoMatch from './components/NoMatch/NoMatch';
 import Country from './components/Country/Country';
 import CountryDetail from './components/CountryDetail/CountryDetail';
+import Recharts from './components/Recharts/Recharts';
+
 
 function App() {
   return (
     <div className="App">
+        <Recharts></Recharts>
+        
       <Router>
         <Switch>
           <Route path= "/home">
           <Home></Home>
           </Route>
           <Route path= "/country/:countryName">
-            <CountryDetail></CountryDetail>
+            <CountryDetail>
+            
+            </CountryDetail>
           </Route>
           <Route exact path= "/">
             <Home></Home>
