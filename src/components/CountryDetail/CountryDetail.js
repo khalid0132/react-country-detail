@@ -14,7 +14,7 @@ const CountryDetail = () => {
             setExactCountry(data[0])
             console.log(data)
         })
-    },[])
+    },[countryName])
     const {population, capital, flag} = exactCountry;
     
     return (
