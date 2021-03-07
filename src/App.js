@@ -15,7 +15,7 @@ import Recharts from './components/Recharts/Recharts';
 function App() {
   return (
     <div className="App">
-        <Recharts></Recharts>
+        {/* <Recharts></Recharts> */}
         
       <Router>
         <Switch>

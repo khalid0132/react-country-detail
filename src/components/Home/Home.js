@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Country from '../Country/Country';
+import './Home.css'
 
 const Home = () => {
     const [countries, setCountries] = useState([])
@@ -17,8 +18,8 @@ const Home = () => {
 
     },[])
     return (
-        <div>
-            <h1>Home info: {countries.length}</h1>
+            // <h1>Home info: {countries.length}</h1>
+        <div className="data">
             {
                 countries.map(country => <Country country={country}></Country>)
             }
